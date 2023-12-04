@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--
+File: index.html
+GUI Assignment: HW4 - Part 1: Validation Plugin
+Aaron Roche
+aaron_roche@student.uml.edu
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+    <form id="inputVal">
+        <table id="userInput">
+            <tr>
+                <td id="startMultiplierText">Start Multiplier:</td>
+                <td><input type="text" name="startMultiplier" id="startMultiplier" required></td>
+            </tr>
+            <tr>
+                <td id="endMultiplierText">End Multiplier:</td>
+                <td><input type="text" name="endMultiplier" id="endMultiplier" required></td>
+            </tr>
+
+            <tr>
+                <td id="startMultiplicandText">Start Multiplicand:</td>
+                <td><input type="text" name="startMultiplicand" id="startMultiplicand" required></td>
+            </tr>
+            <tr>
+                <td id="endMultiplicandText">End Multiplicand:</td>
+                <td><input type="text" name="endMultiplicand" id="endMultiplicand" required></td>
+            </tr>
+
+            <tr>
+                <td id="generate" colspan="2"><button class="submit" type="submit">Generate</button></td>
+            </tr>
+        </table>
+    </form>
+    <div id="infotext"></div>
+    <div id="table"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
